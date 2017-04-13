@@ -9,7 +9,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 object PipelineExample {
   def main(args: Array[String]): Unit = {
-    val conf = new SparkConf().setAppName("Estimator Transformer Param")
+    val conf = new SparkConf().setAppName("Pipeline")
     val sc = new SparkContext(conf)
     val spark = new SQLContext(sc)
 
