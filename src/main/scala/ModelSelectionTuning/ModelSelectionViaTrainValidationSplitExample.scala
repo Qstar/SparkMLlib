@@ -8,7 +8,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 object ModelSelectionViaTrainValidationSplitExample {
   def main(args: Array[String]): Unit = {
-    val conf = new SparkConf().setAppName("Model Selection Via TrainValidation Split")
+    val conf = new SparkConf().setAppName("ModelSelectionViaTrainValidationSplitExample")
     val sc = new SparkContext(conf)
     val spark = new SQLContext(sc)
 
