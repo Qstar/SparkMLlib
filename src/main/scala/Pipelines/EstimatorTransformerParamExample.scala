@@ -7,7 +7,7 @@ import org.apache.spark.ml.param.ParamMap
 import org.apache.spark.sql.{Row, SQLContext}
 
 
-object EstimatorTransformerParam {
+object EstimatorTransformerParamExample {
   def main(args: Array[String]): Unit = {
 
     val conf = new SparkConf().setAppName("Estimator Transformer Param")
