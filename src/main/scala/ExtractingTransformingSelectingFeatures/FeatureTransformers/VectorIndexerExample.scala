@@ -5,7 +5,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 object VectorIndexerExample {
   def main(args: Array[String]): Unit = {
-    val conf = new SparkConf().setAppName("TokenizerExample")
+    val conf = new SparkConf().setAppName("VectorIndexerExample")
     val sc = new SparkContext(conf)
     val spark = new SQLContext(sc)
 

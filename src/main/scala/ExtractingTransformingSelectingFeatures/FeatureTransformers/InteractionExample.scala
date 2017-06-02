@@ -6,7 +6,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 object InteractionExample {
   def main(args: Array[String]): Unit = {
-    val conf = new SparkConf().setAppName("TokenizerExample")
+    val conf = new SparkConf().setAppName("InteractionExample")
     val sc = new SparkContext(conf)
     val spark = new SQLContext(sc)
 
