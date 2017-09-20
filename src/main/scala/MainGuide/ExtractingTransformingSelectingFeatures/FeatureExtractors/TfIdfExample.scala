@@ -29,7 +29,8 @@ object TfIdfExample {
     val idfModel = idf.fit(featurizedData)
 
     val rescaledData = idfModel.transform(featurizedData)
-    rescaledData.select("label", "features").show()
+    rescaledData.show(false)
+    rescaledData.select("label", "features").show(false)
 
     sc.stop()
   }
