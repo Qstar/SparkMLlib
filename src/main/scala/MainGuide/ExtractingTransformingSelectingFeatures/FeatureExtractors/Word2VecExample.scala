@@ -27,9 +27,7 @@ object Word2VecExample {
     val model = word2Vec.fit(documentDF)
 
     val result = model.transform(documentDF)
-    result.collect().foreach { case Row(text: Seq[_], features: Vector) =>
-      println(s"Text:   [${text.mkString(", ")}] => \nVector: $features\n")
-    }
+    result.select("result").take(3).foreach(println)
 
     sc.stop()
   }
