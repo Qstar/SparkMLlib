@@ -30,6 +30,7 @@ object OneHotEncoderExample {
       .setOutputCol("categoryVec")
 
     val encoded = encoder.transform(indexed)
+    encoded.printSchema()
     encoded.show(false)
 
     sc.stop()
