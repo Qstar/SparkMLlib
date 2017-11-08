@@ -52,7 +52,6 @@ object CollaborativeFiltering {
     val userRecs = model.recommendForAllUsers(10)
     // Generate top 10 user recommendations for each movie
     val movieRecs = model.recommendForAllItems(10)
-
     sc.stop()
   }
 }

@@ -71,6 +71,7 @@ object RDDOperation {
     val combineByKeyc = combineByKeyb.zip(combineByKeya)
     val combineByKeyd = combineByKeyc.combineByKey(List(_), (x: List[String], y: String) => y :: x, (x: List[String], y: List[String]) => x ::: y)
     combineByKeyd.collect.foreach(ele => print(ele._1, ele._2))
+    println
 
     println("==countByKey [Pair]========================================")
     val countByKeyc = sc.parallelize(List((3, "Gnu"), (3, "Yak"), (5, "Mouse"), (3, "Dog")), 2)
